@@ -19,6 +19,7 @@ def auntyUncle(inputNumber):
 #Do a basic sanity check to make sure an argument is supplied and it is made up of digits
 if len(sys.argv) == 2 and sys.argv[1].isdigit():
     auntyUncle(sys.argv[1])
-
+    sys.exit(0)
 else:
     print "You must supply an argument that consists only of digits"
+    sys.exit(1)
